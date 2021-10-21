@@ -16,7 +16,19 @@ export class AppController {
   }
 
   @Post()
-  updateTitle(@Query('title') title: string) {
+  updateTitle(
+    @Query('title') title: string) {
     this.title = title;
+  }
+   
+  getSome(){
+    for(var i = 0; i<10; i++){
+      console.log(i);
+    }
+  }
+  addAuthor(){
+    for(var i = 0; i<10; i++){
+      console.log(i);
+    }
   }
 }
