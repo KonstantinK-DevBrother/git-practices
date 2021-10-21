@@ -12,4 +12,10 @@ export class AppController {
       author: 'KK',
     };
   }
+
+  getSome(){
+    for(var i = 0; i<10; i++){
+      console.log(i);
+    }
+  }
 }
